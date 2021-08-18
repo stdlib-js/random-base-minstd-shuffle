@@ -379,7 +379,7 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 [@herzog:2002]: https://books.google.com/books?id=vC7I_gdX-A0C
 
-[@stdlib/array/int32]: https://github.com/stdlib-js/stdlib
+[@stdlib/array/int32]: https://github.com/stdlib-js/array-int32
 
 </section>
 

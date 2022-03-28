@@ -1,0 +1,46 @@
+{
+  "name": "@stdlib/random-base-minstd-shuffle",
+  "version": "0.0.0",
+  "description": "A linear congruential pseudorandom number generator (LCG) whose output is shuffled.",
+  "license": "Apache-2.0",
+  "main": "./bundle.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/random-base-minstd-shuffle.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "mathematics",
+    "math",
+    "statistics",
+    "stats",
+    "prng",
+    "pseudorandom",
+    "random",
+    "randint",
+    "rand",
+    "randu",
+    "uniform",
+    "generator",
+    "lcg",
+    "minstd",
+    "seed",
+    "seedable",
+    "shuffle",
+    "shuffled",
+    "lehmer",
+    "park",
+    "miller",
+    "bays",
+    "durham"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}

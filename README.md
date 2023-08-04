@@ -24,20 +24,30 @@ limitations under the License.
 
 > A linear congruential pseudorandom number generator ([LCG][lcg]) whose output is shuffled.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/random-base-minstd-shuffle
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import minstd from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle@esm/index.mjs';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle@esm/index.mjs';
+var minstd = require( '@stdlib/random-base-minstd-shuffle' );
 ```
 
 #### minstd()
@@ -86,7 +96,7 @@ var v = rand();
 or, for arbitrary length seeds, an array-like `object` containing signed 32-bit integers
 
 ```javascript
-import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@esm/index.mjs';
+var Int32Array = require( '@stdlib/array-int32' );
 
 var rand = minstd.factory({
     'seed': new Int32Array( [ 1234 ] )
@@ -265,13 +275,8 @@ var o = minstd.toJSON();
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import minstd from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle@esm/index.mjs';
+```javascript
+var minstd = require( '@stdlib/random-base-minstd-shuffle' );
 
 var seed;
 var rand;
@@ -298,10 +303,6 @@ rand = minstd.factory({
 for ( i = 0; i < 100; i++ ) {
     console.log( rand() );
 }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -331,9 +332,9 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/random/base/minstd`][@stdlib/random/base/minstd]</span><span class="delimiter">: </span><span class="description">A linear congruential pseudorandom number generator (LCG) based on Park and Miller.</span>
--   <span class="package-name">[`@stdlib/random/base/mt19937`][@stdlib/random/base/mt19937]</span><span class="delimiter">: </span><span class="description">A 32-bit Mersenne Twister pseudorandom number generator.</span>
--   <span class="package-name">[`@stdlib/random/base/randi`][@stdlib/random/base/randi]</span><span class="delimiter">: </span><span class="description">pseudorandom numbers having integer values.</span>
+-   <span class="package-name">[`@stdlib/random-base/minstd`][@stdlib/random/base/minstd]</span><span class="delimiter">: </span><span class="description">A linear congruential pseudorandom number generator (LCG) based on Park and Miller.</span>
+-   <span class="package-name">[`@stdlib/random-base/mt19937`][@stdlib/random/base/mt19937]</span><span class="delimiter">: </span><span class="description">A 32-bit Mersenne Twister pseudorandom number generator.</span>
+-   <span class="package-name">[`@stdlib/random-base/randi`][@stdlib/random/base/randi]</span><span class="delimiter">: </span><span class="description">pseudorandom numbers having integer values.</span>
 
 </section>
 
@@ -348,7 +349,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -392,7 +393,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -416,15 +417,15 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [@herzog:2002]: https://books.google.com/books?id=vC7I_gdX-A0C
 
-[@stdlib/array/int32]: https://github.com/stdlib-js/array-int32/tree/esm
+[@stdlib/array/int32]: https://github.com/stdlib-js/array-int32
 
 <!-- <related-links> -->
 
-[@stdlib/random/base/minstd]: https://github.com/stdlib-js/random-base-minstd/tree/esm
+[@stdlib/random/base/minstd]: https://github.com/stdlib-js/random-base-minstd
 
-[@stdlib/random/base/mt19937]: https://github.com/stdlib-js/random-base-mt19937/tree/esm
+[@stdlib/random/base/mt19937]: https://github.com/stdlib-js/random-base-mt19937
 
-[@stdlib/random/base/randi]: https://github.com/stdlib-js/random-base-randi/tree/esm
+[@stdlib/random/base/randi]: https://github.com/stdlib-js/random-base-randi
 
 <!-- </related-links> -->
 

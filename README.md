@@ -18,26 +18,47 @@ limitations under the License.
 
 -->
 
+
+<details>
+  <summary>
+    About stdlib...
+  </summary>
+  <p>We believe in a future in which the web is a preferred environment for numerical computation. To help realize this future, we've built stdlib. stdlib is a standard library, with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js.</p>
+  <p>The library is fully decomposable, being architected in such a way that you can swap out and mix and match APIs and functionality to cater to your exact preferences and use cases.</p>
+  <p>When you use stdlib, you can be absolutely certain that you are using the most thorough, rigorous, well-written, studied, documented, tested, measured, and high-quality code out there.</p>
+  <p>To join us in bringing numerical computing to the web, get started by checking us out on <a href="https://github.com/stdlib-js/stdlib">GitHub</a>, and please consider <a href="https://opencollective.com/stdlib">financially supporting stdlib</a>. We greatly appreciate your continued support!</p>
+</details>
+
 # MINSTD Shuffle
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > A linear congruential pseudorandom number generator ([LCG][lcg]) whose output is shuffled.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/random-base-minstd-shuffle
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import minstd from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle@esm/index.mjs';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle@esm/index.mjs';
+var minstd = require( '@stdlib/random-base-minstd-shuffle' );
 ```
 
 #### minstd()
@@ -86,7 +107,7 @@ var v = rand();
 or, for arbitrary length seeds, an array-like `object` containing signed 32-bit integers
 
 ```javascript
-import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@esm/index.mjs';
+var Int32Array = require( '@stdlib/array-int32' );
 
 var rand = minstd.factory({
     'seed': new Int32Array( [ 1234 ] )
@@ -265,13 +286,8 @@ var o = minstd.toJSON();
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import minstd from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle@esm/index.mjs';
+```javascript
+var minstd = require( '@stdlib/random-base-minstd-shuffle' );
 
 var seed;
 var rand;
@@ -298,10 +314,6 @@ rand = minstd.factory({
 for ( i = 0; i < 100; i++ ) {
     console.log( rand() );
 }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -348,7 +360,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -378,8 +390,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/random-base-minstd-shuffle.svg
 [npm-url]: https://npmjs.org/package/@stdlib/random-base-minstd-shuffle
 
-[test-image]: https://github.com/stdlib-js/random-base-minstd-shuffle/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/random-base-minstd-shuffle/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/random-base-minstd-shuffle/actions/workflows/test.yml/badge.svg?branch=v0.1.0
+[test-url]: https://github.com/stdlib-js/random-base-minstd-shuffle/actions/workflows/test.yml?query=branch:v0.1.0
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/random-base-minstd-shuffle/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/random-base-minstd-shuffle?branch=main
@@ -416,15 +428,15 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [@herzog:2002]: https://books.google.com/books?id=vC7I_gdX-A0C
 
-[@stdlib/array/int32]: https://github.com/stdlib-js/array-int32/tree/esm
+[@stdlib/array/int32]: https://github.com/stdlib-js/array-int32
 
 <!-- <related-links> -->
 
-[@stdlib/random/base/minstd]: https://github.com/stdlib-js/random-base-minstd/tree/esm
+[@stdlib/random/base/minstd]: https://github.com/stdlib-js/random-base-minstd
 
-[@stdlib/random/base/mt19937]: https://github.com/stdlib-js/random-base-mt19937/tree/esm
+[@stdlib/random/base/mt19937]: https://github.com/stdlib-js/random-base-mt19937
 
-[@stdlib/random/base/randi]: https://github.com/stdlib-js/random-base-randi/tree/esm
+[@stdlib/random/base/randi]: https://github.com/stdlib-js/random-base-randi
 
 <!-- </related-links> -->
 

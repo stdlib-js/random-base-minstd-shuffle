@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-01-03)
+## Unreleased (2025-02-27)
 
 <section class="bug-fixes">
 
@@ -23,6 +23,7 @@
 
 <details>
 
+-   [`d9c2e28`](https://github.com/stdlib-js/stdlib/commit/d9c2e28c3c0298363e4e846e69d32c49252a14a7) - **docs:** update examples _(by Athan Reines)_
 -   [`1467fde`](https://github.com/stdlib-js/stdlib/commit/1467fde6e4523af5030c87ee50b9c0c9ea050668) - **docs:** fix include paths in examples _(by Athan Reines)_
 -   [`7ef177c`](https://github.com/stdlib-js/stdlib/commit/7ef177c87922d543ab59c426c453996a9e51397d) - **fix:** update include paths and reorder includes _(by Athan Reines)_
 -   [`2777e4b`](https://github.com/stdlib-js/stdlib/commit/2777e4be161869d09406e3b17947d24c64b47af2) - **bench:** resolve lint errors in benchmarks _(by Athan Reines)_

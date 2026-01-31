@@ -2,9 +2,9 @@
 
 > Package changelog.
 
-<section class="release" id="unreleased">
+<section class="release" id="v0.2.2">
 
-## Unreleased (2025-05-26)
+## 0.2.2 (2026-01-31)
 
 <section class="bug-fixes">
 
@@ -23,6 +23,9 @@
 
 <details>
 
+-   [`11581aa`](https://github.com/stdlib-js/stdlib/commit/11581aaca8c3cb824cbb92c0c0f80e76890bdb20) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
+-   [`54da286`](https://github.com/stdlib-js/stdlib/commit/54da28610f5ee6b2aa181addb1775d32f79043ee) - **test:** use .strictEqual() instead of .equal() and fix lint errors _(by Philipp Burckhardt)_
+-   [`504a3f1`](https://github.com/stdlib-js/stdlib/commit/504a3f1d1db20b670b48efd1c292d7efbb433b58) - **style:** fix indentation in JSON files _(by Philipp Burckhardt)_
 -   [`d9c2e28`](https://github.com/stdlib-js/stdlib/commit/d9c2e28c3c0298363e4e846e69d32c49252a14a7) - **docs:** update examples _(by Athan Reines)_
 -   [`1467fde`](https://github.com/stdlib-js/stdlib/commit/1467fde6e4523af5030c87ee50b9c0c9ea050668) - **docs:** fix include paths in examples _(by Athan Reines)_
 -   [`7ef177c`](https://github.com/stdlib-js/stdlib/commit/7ef177c87922d543ab59c426c453996a9e51397d) - **fix:** update include paths and reorder includes _(by Athan Reines)_
